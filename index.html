@@ -351,6 +351,15 @@
     <!-- custom js file link  -->
     <script src="script.js"></script>
 
+    <div id="chatbot-container"></div>
+   <script id="chatbot-script" type="module" src="https://main.d1usksvjihc2w.amplifyapp.com/chatbot.bundle.js" data-key="cb-O316m_Qy5ejm9Yv4lJxXKlpWAT-BLWkjLxtYadeZoGYvdVEz"></script>
+   <script>
+      const chatbotScript = document.getElementById('chatbot-script');
+      chatbotScript.addEventListener('load', () => {
+         window.renderChatbot('chatbot-container');
+      });
+   </script>
+
 
 </body>
 
